@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CUSTOMER DETAILS</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+<br/>
+<br/>
+
+<p class="text-center">
+    <strong><a href="/">SHOW ALL CUSTOMERS</a></strong>
+    <br/>
+    <br/>
+
+FIRST NAME: <span th:text="${customer.firstname}"></span><br/>
+LAST NAME: <span th:text="${customer.lastname}"></span><br/>
+STREET ADDRESS: <span th:text="${customer.streetaddress}"></span><br/>
+CITY: <span th:text="${customer.city}"></span><br/>
+STATE: <span th:text="${customer.state}"></span><br/>
+ZIP CODE: <span th:text="${customer.zipcode}"></span><br/>
+EMAIL ADDRESS: <span th:text="${customer.emailaddress}"></span><br/>
+POSITION: <span th:text="${customer.position}"></span><br/>
+CUSTOMER ID: <span th:text="${customer.customerid}"></span><br/>
+COMPANY ID: <span th:text="${customer.companyid}"></span><br/>
+
+    <br/>
+</p>
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/
+jquery.min.js"></script>
+
+</body>
+</html>
