@@ -44,8 +44,14 @@
 <h2>Create Spring Boot Application to Display Customers</h2>
 <h3>SPRINGBOOT CUSTOMER LIST</h3>
 <br/>
+        <form action="/search" method="post">
+            Last name: <input type="text" name="lastname">
+            <input type="submit" value="Submit">
+        </form>
 
-<table>
+
+
+        <table>
     <tr>
 
         <th>FIRST NAME</th>
@@ -61,6 +67,9 @@
         </td>
     </tr>
 </table>
+        <form action="/">
+            <input type="submit" value="Show All">
+        </form>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/
